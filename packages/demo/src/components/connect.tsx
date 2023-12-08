@@ -102,7 +102,7 @@ function ConnectCore(): JSX.Element | null {
     }, []);
 
     const addWebSocketDevice = useCallback(() => {
-        const address = window.prompt("Enter the address of WebSockify server");
+        const address = window.prompt("Enter the address of WebSockify server", "ws://127.0.0.1:5555");
         if (!address) {
             return;
         }
